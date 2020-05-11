@@ -1,4 +1,4 @@
-(ns hello
+(ns hello.core
   (:require [clj-time.core :as t]
             [clj-time.format :as f]))
 
@@ -11,5 +11,8 @@
      (t/default-time-zone))
    dt))
 
+(defn welcome-msg [time]
+  (str "Hello world, the time is " (time->str time)))
+
 (defn -main []
-  (println "Hello world, the time is " (time->str (t/now))))
+  (println (welcome-msg (t/now))))
