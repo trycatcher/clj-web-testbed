@@ -11,8 +11,8 @@
      (t/default-time-zone))
    dt))
 
-(defn welcome-msg [time]
-  (str "Hello world, the time is " (time->str time)))
-
-(defn -main []
-  (println (welcome-msg (t/now))))
+(defn welcome-msg
+  ([]
+   (welcome-msg (t/now)))
+  ([time]
+   (str "Hello world, the time is " (time->str time))))

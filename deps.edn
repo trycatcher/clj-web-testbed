@@ -1,2 +1,3 @@
 {:deps
- {clj-time {:mvn/version "0.14.2"}}}
+ {clj-time {:mvn/version "0.14.2"}
+  ring     {:mvn/version "1.8.1"}}}
